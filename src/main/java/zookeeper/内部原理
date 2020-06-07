@@ -1,0 +1,20 @@
+1. 半数机制
+
+节点
+    1.持久（persistent）、持久化顺序节点
+    2.短暂（Ephemeral）、短暂化顺序节点
+
+创建顺序节点
+[zk: localhost:2181(CONNECTED) 5] create /test 'hello'
+Created /test
+[zk: localhost:2181(CONNECTED) 6] create -s /test/aaa 'hi'
+Created /test/aaa0000000000
+[zk: localhost:2181(CONNECTED) 7] create -s /test/aaa 'hi'
+Created /test/aaa0000000001
+[zk: localhost:2181(CONNECTED) 8] create -s /test/aaa 'hi'
+Created /test/aaa0000000002
+[zk: localhost:2181(CONNECTED) 9] create -s /test/aaa 'hi'
+Created /test/aaa0000000003
+[zk: localhost:2181(CONNECTED) 10] ls /test
+[aaa0000000000, aaa0000000001, aaa0000000002, aaa0000000003]
+

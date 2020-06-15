@@ -1,16 +1,17 @@
 package groovy
 
 import com.netty08.Person
-import groovy.security.GroovyCodeSourcePermission
 import groovy.transform.TypeChecked
 
-import java.security.BasicPermission
 
 /**
  * @FileName: Test01.java* @Description: Test01.java类说明* @Author: wei.tang* @Date: 2020/5/24 12:05
  */
 class Test01 {
     static void main() {
+
+
+
         def aa = new Person()
         aa.setName("张三")
         println aa

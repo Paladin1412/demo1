@@ -86,12 +86,12 @@
             <version>3.11.1</version>
         </dependency>
 
-       <!-- <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.1.41</version>
-        </dependency>
--->
+        <!-- <dependency>
+             <groupId>com.alibaba</groupId>
+             <artifactId>fastjson</artifactId>
+             <version>1.1.41</version>
+         </dependency>
+ -->
 
         <!-- kafka -->
         <!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka-clients -->
@@ -194,6 +194,17 @@
             <version>3.0.4</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>2.4.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.kohsuke</groupId>
+            <artifactId>groovy-sandbox</artifactId>
+            <version>1.15</version>
+        </dependency>
 
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -204,7 +215,7 @@
         <dependency>
             <groupId>cn.securitystack</groupId>
             <artifactId>ctu-engine-client</artifactId>
-           <!-- <version>3.0.0-mix</version>-->
+            <!-- <version>3.0.0-mix</version>-->
             <version>3.5.4</version>
         </dependency>
     </dependencies>

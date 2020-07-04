@@ -95,15 +95,15 @@ public class func {
 
 //    @SuppressWarnings("")
     public static void main2(String[] args) {
-        PersonUtil util = new PersonUtil() {
-            @Override
-            public boolean add(List<Person> list) {
-                System.out.println("aaaaaaaaaa");
-                return false;
-            }
-        };
-
-        util.add(null);
+//        PersonUtil util = new PersonUtil() {
+//            @Override
+//            public boolean add(List<Person> list) {
+//                System.out.println("aaaaaaaaaa");
+//                return false;
+//            }
+//        };
+//
+//        util.add(null);
 
     }
 

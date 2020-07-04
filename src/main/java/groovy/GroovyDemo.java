@@ -31,7 +31,8 @@ public class GroovyDemo {
     static void ssss() throws Exception {
         //准备参数，前端传入
         Map<String, Object> mapParam = new HashMap<>();
-        mapParam.put("p1", p1);
+        mapParam.put("p1", 1);
+		mapParam.put("p1", 2);
         //Groovy脚本入参
         Map<String, Object> map = new HashMap<>();
         map.put("ctx", mapParam);

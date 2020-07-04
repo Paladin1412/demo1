@@ -1,0 +1,48 @@
+{
+  "resultDataType": "double",
+  "opPosOffset": 1,
+  "paramDataTypes": [
+    {
+      "dataType": "double",
+      "required": 0
+    },
+    {
+      "dataType": "double",
+      "required": 0
+    }
+  ],
+  "params": [
+    {
+      "dataParamTypes": {
+        "dataType": "double",
+        "required": 0
+      },
+      "walkKey": "params.0",
+      "unitType": 1,
+      "unitCode": "p1",
+      "dataType": "double",
+      "variableName": "p1",
+      "variableType": 113,
+      "enumValuesList": []
+    },
+    {
+      "dataParamTypes": {
+        "dataType": "double",
+        "required": 0
+      },
+      "walkKey": "params.1",
+      "unitType": 1,
+      "unitCode": "p2",
+      "dataType": "double",
+      "variableName": "p2",
+      "variableType": 113,
+      "enumValuesList": []
+    }
+  ],
+  "unitType": 2,
+  "unitCode": "addition",
+  "unitId": 17,
+  "variableName": "+",
+  "variableType": 109,
+  "enumValuesList": []
+}

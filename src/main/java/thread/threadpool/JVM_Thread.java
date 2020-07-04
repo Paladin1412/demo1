@@ -1,4 +1,4 @@
-package thread;
+package thread.threadpool;
 
 import java.lang.management.ManagementFactory;
 import java.lang.management.RuntimeMXBean;
@@ -8,7 +8,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class Test03 {
+public class JVM_Thread {
 
     public static void main(String[] args) throws Exception {
 //        test01(); //测试线程池不关闭造成的情况

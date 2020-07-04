@@ -22,14 +22,18 @@ public class Test05 {
             System.out.println("add1 " + Thread.currentThread().getName());
         } catch (InterruptedException e) {
             e.printStackTrace();
+        }finally {
+            lock.unlock();
         }
-        lock.unlock();
     }
 
     public void add2() {
         lock.lock();
-        System.out.println("add2 " + Thread.currentThread().getName());
-        lock.unlock();
+        try {
+            System.out.println("add2 " + Thread.currentThread().getName());
+        }finally {
+            lock.unlock();
+        }
     }
 
     public static void main(String[] args) throws InterruptedException {
@@ -60,8 +64,9 @@ public class Test05 {
                 }
             }).start();
         }
-        while (Thread.activeCount() > 2)
+        while (Thread.activeCount() > 2) {
             Thread.yield(); //线程暂停，放弃CPU资源
+        }
         System.out.println(i);
     }
 

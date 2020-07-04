@@ -1,0 +1,1 @@
+strace -ff -o ./ooxx java Test          抓取程序对系统内核有没有调用

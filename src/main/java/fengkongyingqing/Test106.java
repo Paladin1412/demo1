@@ -20,12 +20,12 @@ public class Test106 {
     /**
      * 应用appKey，公钥
      **/
-    public static final String APP_KEY = "605dcafeb376c367b4d3fd4b91ec6a84";
+    public static final String APP_KEY = "42e889bf59a23aae99dec14440ad5ea7";
     /**
      * 应用appSecret，私钥
      **/
-    public static final String APP_SECRET = "66fce3ad3c2acc4daa2f9b0e3c0d6b95";
-    public static final String EventCode = "shijian2";
+    public static final String APP_SECRET = "fb3cc022a1a57d964c9be3498aa36192";
+    public static final String EventCode = "case3";
 
 
     public static void main(String[] param) throws Exception {
@@ -34,26 +34,16 @@ public class Test106 {
         for (int i = 0; i < 1; i++) {
             /**业务请求数据**/
             Map<String, Object> data = new HashMap<>();
+            //入参caculatueSum
+//            data.put("caculatueSum",0);
+            data.put("ip_location","123");
+//            data.put("calExpression","(11+1-2)*3-4");
+//            data.put("f's'd'f'd's",1);
 //            data.put("ceshiint1", 1);
 //            data.put("bool1",true);
 //            data.put("ceshiint2", 1);
 //            data.put("ceshiint3", 2);
 //            data.put("ceshiint4", 2);
-//            data.put("ceshiint5", 2);
-            data.put("ceshibool", true);
-//            data.put("ceshiziduan", "hello");
-//            data.put("bool1", true);
-//            data.put("stringsss",source);
-
-
-
-
-
-
-
-
-
-
 
             CtuRequest request = new CtuRequest();
             request.setEventCode(EventCode);
